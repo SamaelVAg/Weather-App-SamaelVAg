@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import loaderImg from '../assets/weatherIcon.png'
-import cityList from '../assets/cityList.json'
+//import cityList from '../assets/cityList.json'
 
 const WeatherCard = () => {
 
@@ -54,12 +54,13 @@ const WeatherCard = () => {
     }
 
     const citySearch = () => {
-        const search = inpMsg.split(',')
+        alert('Working on it')
+        {/*const search = inpMsg.split(',')
         const city = search[0].trim()
         const country = search[1].trim()
         const index = cityList.findIndex( item => item.name === city & item.country === country )
         setLat(cityList[index].coord.lat)
-        setLon(cityList[index].coord.lon)      
+        setLon(cityList[index].coord.lon)*/}
     }
 
     useEffect( () => {
